@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generate a</h1>
+        <h2> Secure Password</h2>
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" min="1" value="12">
+        <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Uppercase Letters</label>
+        </div>
+        <div>
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Numbers</label>
+        </div>
+        <div>
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Symbols</label>
+        </div>
+        <button id="generateButton" onclick="generatePasswords()">Generate Passwords</button>
+        <div id="passwords"></div>
+    </div>
+
+    <!-- Popup for copied message -->
+    <div id="popup">Copied to clipboard!</div>
+    <div id="popupOverlay"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
